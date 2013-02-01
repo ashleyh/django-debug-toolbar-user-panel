@@ -4,10 +4,10 @@ from django.contrib import auth
 from django.template import RequestContext
 from django.shortcuts import render_to_response, get_object_or_404
 from django.contrib.auth import logout as django_logout
-from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 
+from .compat import User
 from .forms import UserForm
 from .decorators import debug_required
 
