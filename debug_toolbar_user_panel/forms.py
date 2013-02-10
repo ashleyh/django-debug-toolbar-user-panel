@@ -1,7 +1,5 @@
 from django import forms
 
-from .compat import User
-
 
 class UserForm(forms.Form):
     val = forms.CharField(label='User.{id,username,email}')
